@@ -1,0 +1,19 @@
+<div class="box">
+    <div class="row">
+        <div class="col-md-5 col-sm-12">
+            <img src="{{data.image}}" alt="sas">
+        </div>
+        <div class="col-md-7 col-sm-12">
+            <div class="info">
+                <ul class="list-unstyled">
+                    <li><strong>Title : </strong>{{data.title}}</li>
+                    <li><strong>Category : </strong>{{data.category}}</li>
+                    <li><strong>Description : </strong>{{data.description}}</li>
+                    <li><strong>Price : </strong>{{data.price}} L.E</li>
+                    <li><div class="d-flex w-50"><strong>Amount: </strong> <input type="number" class="form-control" min="1" [(ngModel)]="amount"></div> </li>
+                    <li><button class="btn btn-success" (click)="addToCart(data)">Add To Cart</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
